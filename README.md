@@ -20,9 +20,20 @@ This is what the customization looks like once finished:
 
 **Note:** The image shared in the repository (`/usr/share/xrdp/xrdp-logo.bmp`) 
 does not have the avatar and logo name of my server (danbo), it is an image that 
-you can edit (with the image editor of your choice) and customize and add the 
+you can edit (with the image editor of your choice), customize and add the 
 details to your liking.
 
-### Example custom design
+#### Example custom design
 
 ![example](https://github.com/dAvidcA/xrdp-modern-login/assets/585236/a314364f-b3ff-4f08-96c0-229e37e9bda7)
+
+
+## How to use
+
+  * It is recommended to backup the old *xrdp.ini* file which is stored
+    under `/etc/xrdp/xrdp.ini` (Just in case you need it later)
+  * Copy the new *xrdp.ini* on `/etc/xrdp/`
+  * Copy the new logo *xrdp-logo.bmp* on `/usr/share/xrdp/`. Remember
+    to edit the image and add your fav design. The image must be in 24-bits
+    bitmap (.bmp) image.
+  * Reboot your server or restart the xRDP service: `sudo service xrdp restart`
